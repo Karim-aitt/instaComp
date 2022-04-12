@@ -18,16 +18,16 @@
 
   <title>Instagram</title>
 </head>
-<!-- nicssse -->
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: lightgray;">
+
+<body class=""   style="background-color: #d9d9d9">
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: lightgray;">
     <div class="container-fluid d-flex">
 
       <!-- BRAND -->
       <a class="navbar-brand" href="#" style="color: grey"><i class="fa-brands fa-instagram px-2"></i><strong><em>Instagram</em></strong></a>
 
       <!-- Button -->
-      <button class="btn btn-success d-flex ms-auto me-2" type="button" name="button">Create a new post</button>
+      <button class="btn btn-success d-flex ms-auto me-2" type="button" name="button" data-bs-toggle="modal" data-bs-target="#newpost">Create a new post</button>
 
       <!-- Dropdown menú -->
       <div class="">
@@ -45,8 +45,9 @@
       </div>
     </div>
 
+    <!-- Segunda navbar -->
   </nav>
-  <div class="navbar d-flex justify-content-center fixed-top-navbar">
+  <div class="navbar d-flex justify-content-center fixed-top-navbar bg-white">
 
     <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
 
@@ -59,7 +60,89 @@
       <label class="btn btn-outline-secondary" style="border: none" for="btnradio3"><i class="fa-solid fa-square px-2 py-2"></i></label>
     </div>
 
-    <!-- <button type="button" name="button"><i class="fa-solid fa-list-ul px-3 py-3"></i></button>
-    <button type="button" name="button"><i class="fa-solid fa-square px-3 py-3"></i></button>
-  </div> -->
+    <!-- Modal menú -->
+    <div class="modal fade" id="newpost" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <textarea class="col-12" name="name" rows="3" cols="8"></textarea>
+            <div class="">
+              <i class="fa-solid fa-camera p-1 border border-secondary rounded"></i>
+              <i class="fa-solid fa-location-dot p-1 border border-secondary rounded"></i>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-success">Publish</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+    <!-- Body Photos -->
+
+      <div class="container-fluid justify-content-center w-50 m-auto my-5 bg-light p-0 rounded">
+        <div class="d-flex">
+          <h4 class="my-auto p-2">My first photo</h4><p class="p-2 my-auto ms-auto" style="color: grey"><strong>12/14</strong></p>
+        </div>
+        <div class="">
+          <img class="w-100" src="images/foto-body.jpg" alt="img-body">
+        </div>
+        <div class="px-2">
+          <div class="like-texto">
+            <p class="like-texto-p"><strong>23 Likes</strong></p>
+          </div>
+          <div class="desc-texto">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem numquam molestias rerum veritatis tempora! Cum nisi harum excepturi laudantium earum temporibus voluptatibus repellat qui esse odit quod, sed quasi soluta.</p>
+          </div>
+          <div class="d-flex px-2">
+            <i class="fa-regular fa-heart ico-item pe-3"></i>
+            <p class="">Comment... </p><i class="fa-solid fa-ellipsis-vertical ms-auto"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid justify-content-center w-50 m-auto my-5 bg-light p-0 rounded">
+        <div class="d-flex">
+          <h4 class="my-auto p-2">My first photo</h4><p class="p-2 my-auto ms-auto" style="color: grey"><strong>12/14</strong></p>
+        </div>
+        <div class="">
+          <img class="w-100" src="images/foto-body.jpg" alt="img-body">
+        </div>
+        <div class="px-2">
+          <div class="like-texto">
+            <p class="like-texto-p"><strong>23 Likes</strong></p>
+          </div>
+          <div class="desc-texto">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem numquam molestias rerum veritatis tempora! Cum nisi harum excepturi laudantium earum temporibus voluptatibus repellat qui esse odit quod, sed quasi soluta.</p>
+          </div>
+          <div class="d-flex px-2">
+            <i class="fa-regular fa-heart ico-item pe-3"></i>
+            <p class="">Comment... </p><i class="fa-solid fa-ellipsis-vertical ms-auto"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid justify-content-center w-50 m-auto my-5 bg-light p-0 rounded">
+        <div class="d-flex">
+          <h4 class="my-auto p-2">My first photo</h4><p class="p-2 my-auto ms-auto" style="color: grey"><strong>12/14</strong></p>
+        </div>
+        <div class="">
+          <img class="w-100" src="images/foto-body.jpg" alt="img-body">
+        </div>
+        <div class="px-2">
+          <div class="like-texto">
+            <p class="like-texto-p"><strong>23 Likes</strong></p>
+          </div>
+          <div class="desc-texto">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem numquam molestias rerum veritatis tempora! Cum nisi harum excepturi laudantium earum temporibus voluptatibus repellat qui esse odit quod, sed quasi soluta.</p>
+          </div>
+          <div class="d-flex px-2">
+            <i class="fa-regular fa-heart ico-item pe-3"></i>
+            <p class="">Comment... </p><i class="fa-solid fa-ellipsis-vertical ms-auto"></i>
+          </div>
+        </div>
+      </div>
+
 </body>
